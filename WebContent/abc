@@ -1,0 +1,404 @@
+<script type="text/javascript">
+	function validateform() {
+		var first = document.myform.t1.value;
+		var DOB = document.myform.t3.value;
+		var last = document.myform.t2.value;
+		var department = document.myform.t4.value;
+		var designation = document.myform.t5.value;
+		var salary = document.myform.t6.value;
+		var edu = document.myform.t7.value;
+		var add1 = document.myform.t8.value;
+		var add2 = document.myform.t9.value;
+		var city = document.myform.t10.value;
+		var pin = document.myform.t11.value;
+		var phone = document.myform.t12.value;
+
+		if (first == null || first == "") {
+			document.getElementById("a").innerHTML = " Name can not be blank";
+			document.getElementById("a").style.color = "red";
+		} else {
+			document.getElementById("a").innerHTML = "";
+		}
+
+		if (last == null || last == "") {
+			document.getElementById("b").innerHTML = " Last Name can not be blank";
+			document.getElementById("b").style.color = "red";
+		} else {
+			document.getElementById("b").innerHTML = "";
+		}
+		if (DOB == null || DOB == "") {
+			document.getElementById("c").innerHTML = " DOB can not be blank";
+			document.getElementById("c").style.color = "red";
+		} else {
+			document.getElementById("c").innerHTML = "";
+		}
+		if (department == null || department == "") {
+			document.getElementById("d").innerHTML = " Department can not be blank";
+			document.getElementById("d").style.color = "red";
+		} else {
+			document.getElementById("d").innerHTML = "";
+		}
+
+		if (designation == null || designation == "") {
+			document.getElementById("e").innerHTML = " Designation can not be blank";
+			document.getElementById("e").style.color = "red";
+		} else {
+			document.getElementById("e").innerHTML = "";
+		}
+
+		if (salary == null || salary == "") {
+			document.getElementById("f").innerHTML = " Salary can not be blank";
+			document.getElementById("f").style.color = "red";
+		} else {
+			document.getElementById("f").innerHTML = "";
+		}
+
+		if (edu == null || edu == "") {
+			document.getElementById("g").innerHTML = " Education can not be blank";
+			document.getElementById("g").style.color = "red";
+		} else {
+			document.getElementById("g").innerHTML = "";
+		}
+
+		if (add1 == null || add1 == "") {
+			document.getElementById("h").innerHTML = " Address can not be blank";
+			document.getElementById("h").style.color = "red";
+		} else {
+			document.getElementById("h").innerHTML = "";
+		}
+
+		if (add2 == null || add2 == "") {
+			document.getElementById("i").innerHTML = " Address can not be blank";
+
+			document.getElementById("i").style.color = "red";
+		} else {
+			document.getElementById("i").innerHTML = "";
+		}
+
+		if (city == null || city == "") {
+			document.getElementById("j").innerHTML = " City can not be blank";
+			document.getElementById("j").style.color = "red";
+		} else {
+			document.getElementById("j").innerHTML = "";
+		}
+		if (pin == null || pin == "") {
+			document.getElementById("k").innerHTML = " Pin can not be blank";
+			document.getElementById("k").style.color = "red";
+		} else {
+			document.getElementById("k").innerHTML = "";
+		}
+
+		if (phone == null || phone == "") {
+			document.getElementById("l").innerHTML = " Phone can not be blank";
+			document.getElementById("l").style.color = "red";
+		} else {
+			document.getElementById("l").innerHTML = "";
+		}
+
+	}
+	function validateform2() {
+		var first = document.myform.t1.value;
+		var DOB = document.myform.t3.value;
+		var last = document.myform.t2.value;
+		var department = document.myform.t4.value;
+		var designation = document.myform.t5.value;
+		var salary = document.myform.t6.value;
+		var edu = document.myform.t7.value;
+		var add1 = document.myform.t8.value;
+		var add2 = document.myform.t9.value;
+		var city = document.myform.t10.value;
+		var pin = document.myform.t11.value;
+		var phone = document.myform.t12.value;
+		if (phone == null || phone == "" || pin == null || pin == ""
+				|| city == null || city == "" || add2 == null || add2 == ""
+				|| add1 == null || add1 == "" || edu == null || edu == ""
+				|| salary == null || salary == "" || designation == null
+				|| designation == "" || department == null || department == ""
+				|| DOB == null || DOB == "" || last == null || last == ""
+				|| first == null || first == "") {
+			alert("Fields are left empty");
+			return false;
+		}
+	}
+</script>
+
+
+
+<script>
+	function validateform() {
+		var first = document.myform.t1.value;
+		var DOB = document.myform.t3.value;
+		var last = document.myform.t2.value;
+		var department = document.myform.t4.value;
+		var designation = document.myform.t5.value;
+		var salary = document.myform.t6.value;
+		var edu = document.myform.t7.value;
+		var add1 = document.myform.t8.value;
+		var add2 = document.myform.t9.value;
+		var city = document.myform.t10.value;
+		var pin = document.myform.t11.value;
+		var phone = document.myform.t12.value;
+
+		if (first == null || first == "") {
+			alert("First Name can't be blank");
+			return false;
+		} 
+		
+
+		if (last == null || last == "") {
+			alert("Last Name can't be blank");
+			return false;
+		} 
+		
+
+		if (DOB == null || DOB == "") {
+			alert("DOB can't be blank");
+			return false;
+		} 
+		
+
+		if (department == null || department == "") {
+			alert("Department can't be blank");
+			return false;
+		} 
+		
+
+		if (designation == null || designation == "") {
+			alert("Designation can't be blank");
+			return false;
+		} 
+		
+
+		if (salary == null || salary == "") {
+			alert("Salary can't be blank");
+			return false;
+		} 
+		
+		if (edu == null || edu == "") {
+			alert("Qualification Education can't be blank");
+			return false;
+		} 
+		
+		if (add1 == null || add1 == "") {
+			alert("Adress can't be blank");
+			return false;
+		} 
+		
+		if (add2 == null || add2 == "") {
+			alert("Adress can't be blank");
+			return false;
+		} 
+
+		if (city == null || city == "") {
+			alert("City Name can't be blank");
+			return false;
+		} 
+
+		if (pin == null || pin == "") {
+			alert("Pin No can't be blank");
+			return false;
+		} 
+
+		if (phone == null || phone == "") {
+			alert("Phone No can't be blank");
+			return false;
+		} 
+		}
+		</script>
+
+		
+		
+		
+		<script type="text/javascript">
+	// GETTING ALL INPUT TEXT FIELDS
+		
+	// GETTING ALL ERROR OBJECTS
+	
+	function validateform(){
+		var first = document.myform.t1.value;
+		var DOB = document.myform.t3.value;
+		var last = document.myform.t2.value;
+		var department = document.myform.t4.value;
+		var designation = document.myform.t5.value;
+		var salary = document.myform.t6.value;
+		var edu = document.myform.t7.value;
+		var add1 = document.myform.t8.value;
+		var add2 = document.myform.t9.value;
+		var city = document.myform.t10.value;
+		var pin = document.myform.t11.value;
+		var phone = document.myform.t12.value;
+	
+		first.addEventListener("blur", firstVerify, true);
+		last.addEventListener("blur", lastVerify, true);
+		designation.addEventListener("blur", designationVerify, true);
+		department.addEventListener("blur", departmentVerify, true);
+		DOB.addEventListener("blur", DOBVerify, true);
+		salary.addEventListener("blur", salaryVerify, true);
+		add1.addEventListener("blur", add1Verify, true);
+		add2.addEventListener("blur", add2Verify, true);
+		edu.addEventListener("blur", eduVerify, true);
+		pin.addEventListener("blur", pinVerify, true);
+		phone.addEventListener("blur", phoneVerify, true);
+		city.addEventListener("blur", cityVerify, true);
+		
+		// VALIDATE USERNAME
+		if(first == "" || first=null){
+			first_error.textContent = "First Name is required";
+			t1.style.border = "1px solid red";
+			t1.focus();
+			return false;
+		}
+		if(last == "" || last=null){
+			last_error.textContent = "last Name is required";
+			t2.style.border = "1px solid red";
+			t2.focus();
+			return false;
+			if(city == "" || city=null){
+				city_error.textContent = "City Name is required";
+				t10.style.border = "1px solid red";
+				t10.focus();
+				return false;
+			}
+			if(phone == "" || phone=null){
+				phone_error.textContent = "Phone is required";
+				t12.style.border = "1px solid red";
+				t12.focus();
+				return false;
+			}
+			if(pin == "" || pin=null){
+				pin_error.textContent = "PIN is required";
+				t11.style.border = "1px solid red";
+				t11.focus();
+				return false;
+			}
+			if(DOB == "" || DOB=null){
+				DOB_error.textContent = "DOB is required";
+				t3.style.border = "1px solid red";
+				t3.focus();
+				return false;
+			}
+			if(add1 == "" || add1=null){
+				add1_error.textContent = "Address is required";
+				t8.style.border = "1px solid red";
+				t8.focus();
+				return false;
+			}
+			if(department == "" || department=null){
+				department_error.textContent = "Address is required";
+				t4.style.border = "1px solid red";
+				t4.focus();
+				return false;
+			}
+			if(add2 == "" || add2=null){
+				add2_error.textContent = "Address is required";
+				t9.style.border = "1px solid red";
+				t9.focus();
+				return false;
+			}
+			if(designation == "" || designation=null){
+				designation_error.textContent = "Designation is required";
+				t5.style.border = "1px solid red";
+				t5.focus();
+				return false;
+			}
+			if(edu == "" || edu=null){
+				edu_error.textContent = "Qualification is required";
+				t7.style.border = "1px solid red";
+				t7.focus();
+				return false;
+			}
+			if(salary == "" || salary=null){
+				salary_error.textContent = "First Name is required";
+				t6.style.border = "1px solid red";
+				t6.focus();
+				return false;
+			}
+		}
+
+	// ADD EVENT LISTENERS
+	function firstVerify(){
+		if (first != "" || first!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	function lastVerify(){
+		if (last != ""|| last!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	function DOBVerify(){
+		if (DOB != ""|| DOB!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	function designationVerify(){
+		if (designation != "" || designation!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	function departmentVerify(){
+		if (department != ""||department!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	function add1Verify(){
+		if (add1 != ""||add1!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	function add2Verify(){
+		if (add2 != ""||add2!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	function salaryVerify(){
+		if (salary != ""||salary!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	function pinVerify(){
+		if (pin != ""||pin!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	function phoneVerify(){
+		if (phone != ""||phone!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	function cityVerify(){
+		if (city != ""||city!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	function eduVerify(){
+		if (edu != ""||edu!=null) {
+			first_error.innerHTML = "";
+			first.style.border = "1px solid #110E0F";
+			return true;
+		}
+	}
+	}
+</script>

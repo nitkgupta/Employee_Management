@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style>
+input[type=button], input[type=submit], input[type=reset] {
+	background-color: #4CA050;
+	border: none;
+	color: white;
+	padding: 16px 22px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+span {
+	color: red;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Add Record</title>
+<script type="text/javascript">
+	function validateform() {
+		var first = document.myform.t1.value;
+		var DOB = document.myform.t3.value;
+		var last = document.myform.t2.value;
+		var department = document.myform.t4.value;
+		var designation = document.myform.t5.value;
+		var salary = document.myform.t6.value;
+		var edu = document.myform.t7.value;
+		var add1 = document.myform.t8.value;
+		var add2 = document.myform.t9.value;
+		var city = document.myform.t10.value;
+		var pin = document.myform.t11.value;
+		var phone = document.myform.t12.value;
+
+		if (first == null || first == "") {
+			document.getElementById("a").innerHTML = " *";
+			document.getElementById("a").style.color = "red";
+		} else {
+			document.getElementById("a").innerHTML = "";
+		}
+
+		if (last == null || last == "") {
+			document.getElementById("b").innerHTML = " *";
+			document.getElementById("b").style.color = "red";
+		} else {
+			document.getElementById("b").innerHTML = "";
+		}
+		if (DOB == null || DOB == "") {
+			document.getElementById("c").innerHTML = " *";
+			document.getElementById("c").style.color = "red";
+		} else {
+			document.getElementById("c").innerHTML = "";
+		}
+		if (department == null || department == "") {
+			document.getElementById("d").innerHTML = " *";
+			document.getElementById("d").style.color = "red";
+		} else {
+			document.getElementById("d").innerHTML = "";
+		}
+
+		if (designation == null || designation == "") {
+			document.getElementById("e").innerHTML = " *";
+			document.getElementById("e").style.color = "red";
+		} else {
+			document.getElementById("e").innerHTML = "";
+		}
+
+		if (salary == null || salary == "") {
+			document.getElementById("f").innerHTML = " *";
+			document.getElementById("f").style.color = "red";
+		} else {
+			document.getElementById("f").innerHTML = "";
+		}
+
+		if (edu == null || edu == "") {
+			document.getElementById("g").innerHTML = " *";
+			document.getElementById("g").style.color = "red";
+		} else {
+			document.getElementById("g").innerHTML = "";
+		}
+
+		if (add1 == null || add1 == "") {
+			document.getElementById("h").innerHTML = " *";
+			document.getElementById("h").style.color = "red";
+		} else {
+			document.getElementById("h").innerHTML = "";
+		}
+
+		if (add2 == null || add2 == "") {
+			document.getElementById("i").innerHTML = " *";
+
+			document.getElementById("i").style.color = "red";
+		} else {
+			document.getElementById("i").innerHTML = "";
+		}
+
+		if (city == null || city == "") {
+			document.getElementById("j").innerHTML = " *";
+			document.getElementById("j").style.color = "red";
+		} else {
+			document.getElementById("j").innerHTML = "";
+		}
+		if (pin == null || pin == "") {
+			document.getElementById("k").innerHTML = " *";
+			document.getElementById("k").style.color = "red";
+		} else {
+			document.getElementById("k").innerHTML = "";
+		}
+
+		if (phone == null || phone == "") {
+			document.getElementById("l").innerHTML = " *";
+			document.getElementById("l").style.color = "red";
+		} else {
+			document.getElementById("l").innerHTML = "";
+		}
+
+	}
+</script>
+
+
+</head>
+<body>
+	<form name="myform" action="AddRec" method="post">
+		<table align="center">
+			<tr>
+				<td>Employee First Name :</td>
+				<td><input type="text" name="t1" onfocus="validateform()"
+					required><span id="a"></span></td>
+			</tr>
+			<tr>
+				<td>Employee Last Name :</td>
+				<td><input type="text" name="t2" onblur="validateform()"
+					required><span id="b"></span></td>
+			</tr>
+			<tr>
+				<td>Date Of Birth :</td>
+				<td><input type="date" name="t3" onblur="validateform()"
+					required><span id="c"></span></td>
+			</tr>
+			<tr>
+				<td>Department :</td>
+				<td><input type="text" name="t4" onblur="validateform()"
+					required><span id="d"></span></td>
+			</tr>
+			<tr>
+				<td>Designation :</td>
+				<td><input type="text" name="t5" onblur="validateform()"
+					required><span id="e"></span></td>
+			</tr>
+			<tr>
+				<td>Basic Salary :</td>
+				<td><input type="text" name="t6" onblur="validateform()"
+					required><span id="f"></span></td>
+			</tr>
+			<tr>
+				<td>Education Qualification :</td>
+				<td><input type="text" name="t7" onblur="validateform()"
+					required><span id="g"></span></td>
+			</tr>
+			<tr>
+				<td>1st Line of Address :</td>
+				<td><input type="text" name="t8" onblur="validateform()"
+					required><span id="h"></span></td>
+			</tr>
+			<tr>
+				<td>2nd Line of Address :</td>
+				<td><input type="text" name="t9" onblur="validateform()"
+					required><span id="i"></span></td>
+			</tr>
+			<tr>
+				<td>City :</td>
+				<td><input type="text" name="t10" onblur="validateform()"
+					required><span id="j"></span></td>
+			</tr>
+			<tr>
+				<td>PIN :</td>
+				<td><input type="text" name="t11" onblur="validateform()"
+					required><span id="k"></span></td>
+			</tr>
+			<tr>
+				<td>Phone :</td>
+				<td><input type="text" name="t12" onblur="validateform()"
+					required><span id="l"></span></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Submit"></td>
+				<td><input type="Reset" value="Reset"></td>
+			</tr>
+			<tr>
+				<td><span>All field with * are Mandatory</span></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+
